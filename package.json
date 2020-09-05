@@ -1,0 +1,55 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "React boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development",
+    "build": "cross-env NODE_ENV=production ASSET_PATH='./' webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hqta/react-boilerplate.git"
+  },
+  "author": "Harry Ta",
+  "bugs": {
+    "url": "https://github.com/hqta/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/hqta/react-boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "classnames": "^2.2.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.2.2",
+    "cssnano": "^4.1.10",
+    "dotenv": "^8.2.0",
+    "file-loader": "^6.1.0",
+    "html-webpack-plugin": "^4.4.1",
+    "iconfont-webpack-plugin": "^5.0.0",
+    "mini-css-extract-plugin": "^0.11.0",
+    "node-sass": "^4.14.1",
+    "postcss": "^7.0.32",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.3"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
