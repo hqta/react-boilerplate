@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 const App = () => (
   <>
-   <h1>Welcome to React Boilerplate!</h1> 
+    <h1>Welcome to React Boilerplate!</h1> 
   </>
 )
 

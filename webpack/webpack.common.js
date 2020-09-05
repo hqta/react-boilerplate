@@ -16,7 +16,7 @@ const dotenv = require('dotenv').config({
 })
 
 module.exports = {
-  entry:        path.resolve(configPaths.src, 'app.js'),
+  entry:        path.resolve(configPaths.src, 'app'),
   output:       {
     path:       configPaths.dist,
     filename:   'js/[name].bundle.js',
@@ -47,7 +47,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test:    /\.(js|jsx)$/,
+        test:    /\.(ts|js)x?$/,
         exclude: /node_modules/,
         use:     ['babel-loader']
       },
@@ -100,7 +100,8 @@ module.exports = {
       'Components': path.resolve(configPaths.src, 'components'),
       'Styles':     path.resolve(configPaths.src, 'styles'),
       'Images':     path.resolve(configPaths.src, 'assets/images'),
-    }
+    },
+    extensions: ['.ts', '.tsx', '.js']
   },
   target: 'web',
   optimization: {
